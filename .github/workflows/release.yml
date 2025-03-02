@@ -3,8 +3,11 @@ name: Build and Release Mod
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
+
+permissions:
+  contents: write  # Needed for GitHub Releases
 
 jobs:
   build:
@@ -20,7 +23,7 @@ jobs:
           zip -r release/SeedDropRate.zip README.md modinfo.json assets/seeddroprate/patches/crops.json
 
       - name: Upload ZIP as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated
         with:
           name: SeedDropRate
           path: release/SeedDropRate.zip
@@ -34,7 +37,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download ZIP from artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4  # Updated
         with:
           name: SeedDropRate
           path: release
