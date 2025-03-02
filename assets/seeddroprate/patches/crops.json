@@ -1,0 +1,197 @@
+[
+  {
+    "file": "game:blocktypes/plant/crop/amaranth",
+    "op": "add",
+    "path": "/dropsByType/*-9/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-amaranth",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/bellpepper",
+    "op": "add",
+    "path": "/dropsByType/*-19/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-bellpepper",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/cabbage",
+    "op": "add",
+    "path": "/dropsByType/*-12/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-cabbage",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/carrot",
+    "op": "add",
+    "path": "/dropsByType/*-7/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-carrot",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/cassava",
+    "op": "add",
+    "path": "/dropsByType/*-9/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-cassava",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/flax",
+    "op": "add",
+    "path": "/dropsByType/*-9/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-flax",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/onion",
+    "op": "add",
+    "path": "/dropsByType/*-7/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-onion",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/parsnip",
+    "op": "add",
+    "path": "/dropsByType/*-8/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-parsnip",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/peanut",
+    "op": "add",
+    "path": "/dropsByType/*-9/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-peanut",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/rice",
+    "op": "add",
+    "path": "/dropsByType/*-10/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-rice",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/rye",
+    "op": "add",
+    "path": "/dropsByType/*-9/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-rye",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/soybean",
+    "op": "add",
+    "path": "/dropsByType/*-11/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-soybean",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/spelt",
+    "op": "add",
+    "path": "/dropsByType/*-9/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-spelt",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/sunflower",
+    "op": "add",
+    "path": "/dropsByType/*-12/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-spelt",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  },
+  {
+    "file": "game:blocktypes/plant/crop/turnip",
+    "op": "add",
+    "path": "/dropsByType/*-5/-",
+    "value": {
+      "type": "item",
+      "code": "seeds-turnip",
+      "quantity": {
+        "avg": 3,
+        "var": 0
+      }
+    }
+  }
+]
