@@ -19,7 +19,7 @@ jobs:
       - name: Create ZIP file
         run: |
           mkdir -p release
-          zip -r release/SeedDropRate.zip README.md modinfo.json assets/seeddroprate/patches/crops.json
+          zip -r release/SeedDropRate_${VERSION}.zip README.md modinfo.json assets/seeddroprate/patches/crops.json
 
       - name: Upload ZIP as artifact
         uses: actions/upload-artifact@v4
