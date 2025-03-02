@@ -2,12 +2,12 @@ name: Build and Release Mod
 
 on:
   push:
-    branches:
-      - master
-  workflow_dispatch:
+    tags:
+      - "v*"  # Trigger build only when a new tag (e.g., v1.0) is pushed
+  workflow_dispatch:  # Allows manual triggering
 
 permissions:
-  contents: write
+  contents: write  # Needed for GitHub Releases
 
 jobs:
   build:
@@ -16,6 +16,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Lint JSON Files
+        run: |
+          jq . modinfo.json > /dev/null
+          jq . assets/seeddroprate/patches/crops.json > /dev/null
 
       - name: Create ZIP file
         run: |
