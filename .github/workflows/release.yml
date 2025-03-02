@@ -1,0 +1,47 @@
+name: Build and Release Mod
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create ZIP file
+        run: |
+          mkdir -p release
+          zip -r release/SeedDropRate.zip README.md modinfo.json assets/seeddroprate/patches/crops.json
+
+      - name: Upload ZIP as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: SeedDropRate
+          path: release/SeedDropRate.zip
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download ZIP from artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: SeedDropRate
+          path: release
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: release/SeedDropRate.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
