@@ -4,7 +4,7 @@
   "name": "Seed Drop Rate",
   "description" : "This mod increases drop rate of seeds from crops",
   "authors": ["Parsiuk"],
-  "version": "0.2",
+  "version": "1.0",
   "dependencies": { 
     "game": "1.20.0",
   },
